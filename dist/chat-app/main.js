@@ -415,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 let AppServiceService = class AppServiceService {
     constructor(http) {
         this.http = http;
-        this.url = "http://localhost:3000";
+        this.url = "/api";
     }
     signUp(data) {
         const params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpParams"]().
@@ -934,7 +934,7 @@ let SocketserviceService = class SocketserviceService {
         this.searchPeople = (name) => {
             this.socket.emit('search-user', name);
         }; //end search people
-        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('http://localhost:3000');
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('http://ec2-18-219-5-23.us-east-2.compute.amazonaws.com:3000');
     }
 };
 SocketserviceService.ctorParameters = () => [
